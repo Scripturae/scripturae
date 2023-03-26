@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Grille Tarifaire - Scripturae</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 50px auto 0;
+            padding: 5px;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #FFC300;
+            color: #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+        
+        /* Grille tarifaire */
+        .tarifs {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .tarifs th, .tarifs td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .tarifs th {
+            background-color: #FFC300;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .tarifs tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="padding-left: 50px">Grille Tarifaire - Scripturae</h1>
+    </header>
+    <div class="container">
+        <table class="tarifs">
+            <thead>
+                <tr>
+                    <th>Prestation</th>
+                    <th>Tarif</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rédaction d'articles de blog (300 mots)</td>
+                    <td>10 €</td>
+                </tr>
+                <tr>
+                    <td>Relecture</td>
+                    <td>2 € par article</td>
+                </tr>
+                <tr>
+                    <td>5 à 10 articles</td>
+                    <td>5 % de réduction</td>
+                </tr>
+                <tr>
+                    <td>11 à 20 articles</td>
+                    <td>10 % de réduction</td>
+                </tr>
+                <tr>
+                    <td>21 articles et plus</td>
+                    <td>15 % de réduction</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <strong>Nos prestations incluent</strong> :<br>
+            - Garantie anti-plagiat : tous nos articles sont uniques et vérifiés avec des outils anti-plagiat<br>
+            - Choix des rédacteurs : nous disposons d'une équipe de rédacteurs spécialisés dans divers secteurs d'activité pour répondre à vos besoins spécifiques<br>
+            - Expertise approfondie : nos rédacteurs sont sélectionnés pour leur connaissance approfondie de leur domaine et leur capacité à produire du contenu de qualité
+        </p>
+        <p>
+            <strong>Services de traduction</strong> : Nous proposons également des services de traduction professionnelle. Veuillez nous contacter pour obtenir un devis personnalisé.
+        </p>
+    </div>
+</body>

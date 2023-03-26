@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Scripturae- Services de rédaction d'articles</title>
+	<link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+</head>
+<body>
+	<header class="header-flottant header-ombre">
+    <h1 >Scripturae</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a class="nav-link" href="#apropos">À propos</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#tarifs">Tarifs</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li><a class="nav-link" href="#avis">Avis</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+  <div class="image"></div>
+</div>
+
+
+<main class="grid">
+	<section id="apropos" class="main-espacement">
+		<div class="container">
+			<h2>À propos de nous</h2>
+			<p>Nous sommes une entreprise passionnée par la rédaction d'articles pour les sites et les blogs. 
+        Nous offrons des services de haute qualité à des tarifs abordables pour aider nos clients à améliorer leur référencement naturel et à ajouter du contenu de qualité à leur site.
+         Notre équipe compétente et professionnelle travaille avec chaque client individuellement pour répondre à ses besoins et à ses attentes en matière de contenu. 
+         Nous sommes engagés à respecter les normes éthiques les plus élevées dans notre travail de rédaction d'articles et à protéger la confidentialité des données de nos clients.
+          En bref, nous sommes là pour fournir un service rapide, efficace et fiable de rédaction d'articles pour vous aider à atteindre vos objectifs de contenu.</p>
+		</div>
+	</section>
+    <section id="services" class="grid">
+      <h2>Nos services</h2>   
+        <div class="services">
+                   
+          <div class="box">
+            <h3>Rédaction d'articles pour le web</h3>
+            <p>Nous écrivons des articles optimisés pour le référencement naturel qui répondent aux besoins de votre site web.</p>
+          </div>
+          <div class="box">
+            <h3>Optimisation SEO des articles</h3>
+            <p>Nous optimisons vos articles pour les moteurs de recherche pour aider votre site à se classer plus haut dans les résultats de recherche.</p>
+          </div>
+          <div class="box">
+            <h3>Relecture et correction et traduction d'articles existants</h3>
+            <p>Nous relisons et corrigeons les articles existants pour améliorer leur qualité et leur pertinence.<br>
+              <br>  
+            Anglais/Espagnol/Arabe/Italien
+           </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tarifs" class="grid">
+		<div class="container">
+			<h2>Tarifs</h2>
+			<div class="price-box">
+				<div class="price">
+					<h3>300 mots</h3>
+					<p>10€</p>
+				</div>
+				<div class="price">
+					<h3>600 mots</h3>
+					<p>20€</p>
+				</div>
+				<div class="price">
+					<h3>900 mots</h3>
+					<p>30€</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="grid">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <form action="envoyer.php" method="post">
+        <div class="form-group">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+  <section id="avis" class="grid">
+    <div class="container">
+      <h2>Avis de nos clients</h2>
+      <div class="ratings">
+        <div class="rating">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>5.0 / 5.0 (4 avis)</p>
+        </div>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial">
+          <blockquote>
+            <p>“Très bon travail, je suis très satisfait de la qualité des articles livrés. Je recommande chaudement !”</p>
+            <cite>John Doe, propriétaire de www.monblog.com</cite>
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            <p>“Service rapide et efficace, les articles sont bien écrits et optimisés pour le SEO. Je suis ravi de travailler avec cette entreprise !”</p>
+            <cite>Jane Smith, propriétaire de www.monentreprise.fr</cite>
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            <p>“Très bon travail, je suis très satisfait de la qualité des articles livrés. Je recommande chaudement !”</p>
+            <cite>John Doe, propriétaire de www.monblog.com</cite>
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            <p>“Service rapide et efficace, les articles sont bien écrits et optimisés pour le SEO. Je suis ravi de travailler avec cette entreprise !”</p>
+            <cite>Jane Smith, propriétaire de www.monentreprise.fr</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+  <footer>
+    <p>&copy; 2023 Scripturae. Tous droits réservés.</p>
+    <p class="cgv"><a href="cgv.html" class="footer-link">Conditions générales de vente</a></p>
+    <p class="mentions-legales"><a href="mentions-legales.html" class="footer-link">Mentions légales</a></p>
+</footer>
+    
+    
+<script>
+    $(document).ready(function(){
+        var stickyNavTop = $('.navbar').offset().top;
+        var stickyNav = function(){
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > stickyNavTop) {
+                $('.navbar').addClass('sticky');
+            } else {
+                $('.navbar').removeClass('sticky');
+            }
+        };
+        stickyNav();
+        $(window).scroll(function() {
+            stickyNav();
+        });
+
+        // Ajoutez cette partie pour l'animation douce
+        $('.nav-link').click(function(){
+            var href = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(href).offset().top
+            }, 1500, 'easeInOutCubic'); // Ici, remplacez 'easeInOutQuint' par 'easeInOutCubic'.
+            return false;
+        });
+    });
+</script>
+
+</body>
+</html>

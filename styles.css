@@ -1,0 +1,405 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding: 5px;
+  }
+  
+  
+  /* Header styles */
+  header {
+    background-color: #FFC300;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .header-ombre {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-flottant {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #FFC300; /* Remplacez cette valeur par la couleur de votre choix */
+}
+
+header a {
+  color: #000;
+  text-decoration: none; /* Supprime le soulignement */
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Pour créer une seule colonne */
+  grid-gap: 100px; /* Pour définir la distance fixe entre chaque section */
+}
+
+
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #4A4A4A;
+    color: #FFF;
+  }
+  
+  .navbar ul {
+    transform: translateX(-100px);
+  }
+  
+  
+  /* Section styles */
+  section {
+    padding: 150px 0;
+  }
+  
+  section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .box {
+    background-color: #FFF;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  #services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .box {
+    background-color: #FFF;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    padding: 100px;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.box:last-of-type {
+    margin-right: 0;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .services {
+    flex-direction: column;
+    }
+    .box {
+    margin-right: 0;
+    margin-bottom: 20px;
+    }
+    }
+
+
+  .price-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .price {
+    background-color: #FFF;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .price:last-child {
+    margin-right: 0;
+  }
+  
+  .price h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .price p {
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group textarea {
+    width: 100%;
+    padding: 100px;
+}
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    
+  }
+  
+  button[type="submit"] {
+    background-color: #FFC300;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #4A4A4A;
+    color: #FFF;
+  }
+
+  button[type="submit"] {
+    width: 30%;
+}
+  
+ /* Testimonial styles */
+ .testimonials {
+  display: flex;
+  padding-top: 80px;
+  flex-direction: column; /* Pour afficher les boîtes en colonnes */
+  gap: 0px; /* Pour créer un espace entre les boîtes de témoignages */
+}
+
+.testimonial {
+  margin-bottom: 20px;
+  max-width: 100%; /* Pour que les boîtes occupent 100% de l'espace disponible */
+}
+    
+    blockquote {
+    font-size: 18px;
+    margin-bottom: 10px;
+    }
+    
+    blockquote p {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 10px;
+    }
+    
+    cite {
+    font-size: 18px;
+    font-style: normal;
+    }
+    
+    /* Footer styles */
+    footer {
+    background-color: #4A4A4A;
+    color: #FFF;
+    text-align: center;
+    padding: 0px;
+    }
+    
+    footer p {
+    font-size: 18px;
+    margin: 0;
+    }
+    
+/* Pour les écrans de 768px et moins */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+      text-align: center;
+      padding-left: 0;
+      }
+      
+    
+
+    nav {
+      margin-top: 20px;
+      justify-content: center;
+    }
+
+    nav li {
+        justify-content: center;
+    }
+   
+    .navbar ul {
+      transform: translateX(0);
+  }
+
+
+    .price-box {
+        flex-direction: column;
+    }
+
+    .price {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+    /* Styles pour les boîtes tarifaires */
+.price-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .price {
+    background-color: #FFF;
+    border: 0px solid #4A4A4A;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #4A4A4A;
+    
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .price:hover {
+    box-shadow: 0px 0px 10px #4A4A4A;
+    transform: translateY(-5px);
+  }
+/* Styles pour la section Avis */
+.ratings {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .rating {
+    text-align: center;
+  }
+  
+  .stars {
+    color: #FFC300;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .stars i.fas {
+    font-weight: 900;
+  }
+  
+  .stars i.far {
+    font-weight: 400;
+  }
+  
+  .testimonials {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .testimonial {
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 0px;
+    flex: 1;
+  }
+  
+  .testimonial:last-of-type {
+    margin-right: 0;
+  }
+  
+  blockquote p {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  cite {
+    font-size: 18px;
+    font-style: normal;
+  }
+
+  @media (min-width: 769px) {
+    .header-flottant h1 {
+      padding-left: 50px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .testimonials {
+      flex-direction: column;
+    }
+    
+    .testimonial {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+
+footer {
+  background-color: #4A4A4A;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px; /* Ajoute une marge supérieure */
+}
+
+.cgv {
+  margin-bottom: 20px; /* Ajoute une marge inférieure */
+}
